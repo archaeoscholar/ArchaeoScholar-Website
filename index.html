@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArchaeoScholar — Buddhist Circuit Scholarly Expeditions</title>
+<meta name="description" content="Scholarly expeditions across the Buddhist Circuit and archaeological landscapes of Bihar, UP, and Lumbini. Led by Dr. Shanker Sharma — archaeologist, Assistant Professor at Magadh University, and former ASI officer with 25 years of field experience.">
+<meta name="keywords" content="Buddhist Circuit, archaeological expeditions, Bodh Gaya, Nalanda, Rajgir, Sarnath, Kushinagar, Vaishali, Lumbini, Vikramshila, Ashokan pillars, Buddhist archaeology, Middle Ganga Valley">
+<meta name="author" content="Dr. Shanker Sharma — ArchaeoScholar">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://archaeoscholar.com/">
+<meta property="og:title" content="ArchaeoScholar — Buddhist Circuit Scholarly Expeditions">
+<meta property="og:description" content="Scholarly expeditions across the Buddhist Circuit led by Dr. Shanker Sharma — archaeologist and Assistant Professor at Magadh University with 25 years of field experience.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://archaeoscholar.com/">
+<meta property="og:site_name" content="ArchaeoScholar">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ArchaeoScholar — Buddhist Circuit Scholarly Expeditions">
+<meta name="twitter:description" content="Scholarly expeditions across the Buddhist Circuit. For researchers, scholars, and academics.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Josefin+Sans:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sand: #d4c5a9; --sand-light: #e8dcc8; --clay: #8b6f47; --clay-dark: #6b5234;
+    --obsidian: #1a1612; --parchment: #f5f0e8; --parchment-dark: #ebe3d3;
+    --terracotta: #c2703e; --terracotta-muted: #a85d33; --moss: #5a6b4a;
+    --bone: #faf7f2; --ink: #2c2419; --gold: #b8943e; --gold-light: #d4b35a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'EB Garamond', Georgia, serif; background: var(--bone); color: var(--ink); overflow-x: hidden; line-height: 1.7; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1.2rem 3rem; display: flex; justify-content: space-between; align-items: center; transition: all 0.5s ease; background: transparent; }
+  nav.scrolled { background: rgba(26,22,18,0.92); backdrop-filter: blur(12px); padding: 0.8rem 3rem; box-shadow: 0 2px 30px rgba(0,0,0,0.15); }
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; color: var(--parchment); letter-spacing: 0.08em; text-decoration: none; }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-family: 'Josefin Sans', sans-serif; font-size: 0.72rem; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sand-light); text-decoration: none; position: relative; transition: color 0.3s; }
+  .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: var(--gold); transition: width 0.4s ease; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a:hover::after { width: 100%; }
+
+  /* HERO */
+  .hero { min-height: 100vh; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; background: var(--obsidian); padding-bottom: 4rem; }
+  .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse at 20% 80%, rgba(139,111,71,0.25) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(194,112,62,0.15) 0%, transparent 50%), radial-gradient(ellipse at 50% 50%, rgba(26,22,18,0.6) 0%, transparent 100%), linear-gradient(180deg, #2c2419 0%, #1a1612 40%, #0f0d0a 100%); }
+  .hero-pattern { position: absolute; inset: 0; opacity: 0.04; background-image: repeating-linear-gradient(0deg, transparent, transparent 49px, var(--sand) 49px, var(--sand) 50px), repeating-linear-gradient(90deg, transparent, transparent 49px, var(--sand) 49px, var(--sand) 50px); }
+  .hero-grid { position: absolute; inset: 0; opacity: 0.06; background: linear-gradient(var(--sand) 1px, transparent 1px) 0 0 / 100% 33.33%, linear-gradient(90deg, var(--sand) 1px, transparent 1px) 0 0 / 33.33% 100%; }
+  .hero-content { position: relative; z-index: 2; text-align: center; max-width: 900px; padding: 8rem 2rem 0; animation: heroReveal 1.5s ease forwards; }
+  @keyframes heroReveal { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-subtitle { font-family: 'Josefin Sans', sans-serif; font-size: 0.7rem; font-weight: 400; letter-spacing: 0.45em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.8rem; animation: heroReveal 1.5s ease 0.3s both; }
+  .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 6vw, 5.5rem); font-weight: 300; line-height: 1.1; color: var(--parchment); margin-bottom: 1.5rem; animation: heroReveal 1.5s ease 0.5s both; }
+  .hero-title em { font-style: italic; color: var(--gold-light); font-weight: 300; }
+  .hero-desc { font-size: 1.15rem; color: var(--sand); max-width: 640px; margin: 0 auto 2.5rem; line-height: 1.8; font-weight: 400; animation: heroReveal 1.5s ease 0.7s both; }
+  .hero-cta { display: inline-flex; align-items: center; gap: 0.8rem; font-family: 'Josefin Sans', sans-serif; font-size: 0.72rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); text-decoration: none; border: 1px solid var(--gold); padding: 1rem 2.5rem; transition: all 0.4s ease; animation: heroReveal 1.5s ease 0.9s both; }
+  .hero-cta:hover { background: var(--gold); color: var(--obsidian); }
+  .hero-cta svg { width: 14px; height: 14px; transition: transform 0.3s; }
+  .hero-cta:hover svg { transform: translateX(4px); }
+
+  /* HERO GALLERY */
+  .hero-gallery { position: relative; z-index: 2; width: 100%; max-width: 1200px; margin-top: 4rem; padding: 0 2rem; animation: heroReveal 1.5s ease 1.1s both; }
+  .hero-gallery-label { font-family: 'Josefin Sans', sans-serif; font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--sand); opacity: 0.5; text-align: center; margin-bottom: 1.2rem; }
+  .hero-gallery-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.8rem; }
+  .hero-gallery-item { position: relative; aspect-ratio: 4/3; overflow: hidden; border: 1px solid rgba(184,148,62,0.2); }
+  .hero-gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease, filter 0.6s ease; filter: brightness(0.8) saturate(0.85); }
+  .hero-gallery-item:hover img { transform: scale(1.08); filter: brightness(1) saturate(1); }
+  .hero-gallery-item .gallery-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.6rem 0.8rem; background: linear-gradient(transparent, rgba(26,22,18,0.85)); font-family: 'Josefin Sans', sans-serif; font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sand-light); }
+  /* Placeholder for when no images yet */
+  .hero-gallery-item .gallery-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 0.9rem; font-style: italic; color: var(--sand); text-align: center; padding: 1rem; }
+  .hero-gallery-item:nth-child(1) .gallery-placeholder { background: linear-gradient(135deg, #3d3224, #5a4432); }
+  .hero-gallery-item:nth-child(2) .gallery-placeholder { background: linear-gradient(135deg, #4a3828, #6b5034); }
+  .hero-gallery-item:nth-child(3) .gallery-placeholder { background: linear-gradient(135deg, #3a3020, #52412e); }
+  .hero-gallery-item:nth-child(4) .gallery-placeholder { background: linear-gradient(135deg, #443826, #5e4830); }
+  .hero-gallery-item:nth-child(5) .gallery-placeholder { background: linear-gradient(135deg, #3e3222, #564230); }
+
+  section { position: relative; }
+  .section-tag { font-family: 'Josefin Sans', sans-serif; font-size: 0.65rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem; }
+  .section-tag::before { content: ''; width: 40px; height: 1px; background: var(--terracotta); }
+  .section-heading { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300; line-height: 1.2; color: var(--ink); margin-bottom: 1.5rem; }
+  .section-heading em { font-style: italic; color: var(--clay-dark); }
+
+  /* ABOUT */
+  .about { padding: 8rem 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; max-width: 1300px; margin: 0 auto; align-items: center; }
+  .about-visual { position: relative; height: 550px; }
+  .about-img-frame { position: absolute; width: 75%; height: 85%; top: 0; left: 0; background: var(--parchment-dark); border: 1px solid var(--sand); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .about-img-frame .placeholder-art { width: 100%; height: 100%; background: radial-gradient(ellipse at 30% 70%, var(--clay) 0%, transparent 60%), radial-gradient(ellipse at 70% 30%, var(--terracotta-muted) 0%, transparent 50%), linear-gradient(135deg, var(--sand) 0%, var(--parchment-dark) 100%); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-style: italic; color: var(--bone); text-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+  .about-accent-frame { position: absolute; width: 55%; height: 50%; bottom: 0; right: 0; border: 1px solid var(--gold); padding: 2rem; background: var(--obsidian); display: flex; flex-direction: column; justify-content: center; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
+  .accent-stat { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 300; color: var(--gold); line-height: 1; }
+  .accent-label { font-family: 'Josefin Sans', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--sand); margin-top: 0.5rem; }
+  .about-text p { font-size: 1.08rem; line-height: 1.85; color: #4a3f32; margin-bottom: 1.5rem; }
+  .credential-list { margin-top: 2rem; display: flex; flex-direction: column; gap: 0.8rem; }
+  .credential-item { display: flex; align-items: center; gap: 0.8rem; font-family: 'Josefin Sans', sans-serif; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--clay-dark); }
+  .credential-dot { width: 6px; height: 6px; background: var(--terracotta); transform: rotate(45deg); flex-shrink: 0; }
+
+  /* CAREER TIMELINE */
+  .career-timeline { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0; }
+  .career-step { display: flex; gap: 1rem; align-items: flex-start; position: relative; padding-bottom: 1.2rem; padding-left: 1.2rem; border-left: 1px solid var(--sand); }
+  .career-step:last-child { padding-bottom: 0; border-left-color: transparent; }
+  .career-step::before { content: ''; position: absolute; left: -4px; top: 4px; width: 7px; height: 7px; background: var(--terracotta); transform: rotate(45deg); }
+  .career-years { font-family: 'Josefin Sans', sans-serif; font-size: 0.6rem; letter-spacing: 0.15em; color: var(--gold); min-width: 80px; padding-top: 2px; }
+  .career-role { font-size: 0.9rem; color: var(--clay-dark); line-height: 1.5; }
+  .career-role strong { font-weight: 600; color: var(--ink); }
+
+  .divider { max-width: 1300px; margin: 0 auto; padding: 0 3rem; display: flex; align-items: center; gap: 2rem; }
+  .divider-line { flex: 1; height: 1px; background: var(--sand); }
+  .divider-icon { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; color: var(--clay); opacity: 0.5; }
+
+  /* CIRCUITS */
+  .circuits { padding: 8rem 3rem; max-width: 1300px; margin: 0 auto; }
+  .circuits-header { max-width: 700px; margin-bottom: 4rem; }
+  .circuits-header p { font-size: 1.08rem; color: #4a3f32; line-height: 1.85; }
+  .circuit-block { margin-bottom: 4rem; }
+  .circuit-block:last-child { margin-bottom: 0; }
+  .circuit-block-header { display: flex; align-items: baseline; gap: 1.2rem; margin-bottom: 0.6rem; }
+  .circuit-block-num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 300; color: var(--sand); line-height: 1; }
+  .circuit-block-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 500; color: var(--ink); }
+  .circuit-block-desc { font-size: 0.98rem; color: #5a4e3f; line-height: 1.7; margin-bottom: 1.5rem; max-width: 800px; }
+
+  /* SITE PHOTO CARDS */
+  .site-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.8rem; }
+  .site-card { position: relative; aspect-ratio: 1; overflow: hidden; border: 1px solid var(--sand); background: var(--parchment-dark); cursor: default; transition: all 0.4s ease; }
+  .site-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.1); transform: translateY(-3px); }
+  .site-card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+  .site-card:hover .site-card-img { transform: scale(1.06); }
+  /* Placeholder gradient when no image */
+  .site-card-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 0.8rem; font-style: italic; color: var(--bone); text-align: center; padding: 0.5rem; text-shadow: 0 1px 4px rgba(0,0,0,0.3); }
+  .site-card-name { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.5rem 0.6rem; background: linear-gradient(transparent, rgba(26,22,18,0.88)); font-family: 'Josefin Sans', sans-serif; font-size: 0.52rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sand-light); line-height: 1.3; }
+
+  /* HOW IT WORKS */
+  .how-it-works { background: var(--obsidian); padding: 6rem 3rem; position: relative; overflow: hidden; }
+  .how-it-works::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent, transparent 99px, rgba(184,148,62,0.06) 99px, rgba(184,148,62,0.06) 100px); }
+  .hiw-inner { max-width: 1300px; margin: 0 auto; position: relative; }
+  .hiw-header { max-width: 600px; margin-bottom: 4rem; }
+  .hiw-header .section-tag { color: var(--gold); }
+  .hiw-header .section-tag::before { background: var(--gold); }
+  .hiw-header .section-heading { color: var(--parchment); }
+  .hiw-header p { color: var(--sand); font-size: 1.05rem; line-height: 1.8; }
+  .hiw-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+  .hiw-step { position: relative; }
+  .hiw-step-num { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 0.8rem; }
+  .hiw-step h4 { font-family: 'Josefin Sans', sans-serif; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--parchment); margin-bottom: 0.5rem; }
+  .hiw-step p { font-size: 0.92rem; color: var(--sand); line-height: 1.65; }
+  .hiw-connector { position: absolute; top: 1.5rem; right: -1rem; width: 2rem; height: 1px; background: rgba(184,148,62,0.3); }
+  .hiw-email-box { margin-top: 3.5rem; padding: 2rem 2.5rem; border: 1px solid var(--gold); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
+  .hiw-email-label { font-family: 'Josefin Sans', sans-serif; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sand); }
+  .hiw-email-address { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 400; }
+  .hiw-email-address a { color: var(--gold); text-decoration: none; transition: color 0.3s; }
+  .hiw-email-address a:hover { color: var(--parchment); }
+
+  /* FORMATS */
+  .formats { padding: 8rem 3rem; max-width: 1300px; margin: 0 auto; }
+  .formats-header { max-width: 650px; margin-bottom: 4rem; }
+  .formats-header p { font-size: 1.08rem; color: #4a3f32; line-height: 1.85; }
+  .formats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .format-card { border: 1px solid var(--sand); padding: 2.5rem 2rem; background: var(--bone); position: relative; transition: all 0.5s ease; overflow: hidden; }
+  .format-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--terracotta), var(--gold)); transform: scaleX(0); transform-origin: left; transition: transform 0.5s ease; }
+  .format-card:hover::before { transform: scaleX(1); }
+  .format-card:hover { box-shadow: 0 15px 50px rgba(0,0,0,0.08); transform: translateY(-4px); }
+  .format-icon { width: 48px; height: 48px; margin-bottom: 1.5rem; color: var(--terracotta); }
+  .format-type { font-family: 'Josefin Sans', sans-serif; font-size: 0.6rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--moss); margin-bottom: 0.6rem; }
+  .format-title { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 500; color: var(--ink); margin-bottom: 0.3rem; }
+  .format-capacity { font-family: 'Josefin Sans', sans-serif; font-size: 0.65rem; letter-spacing: 0.15em; color: var(--gold); margin-bottom: 1.2rem; text-transform: uppercase; }
+  .format-desc { font-size: 0.98rem; color: #5a4e3f; line-height: 1.75; margin-bottom: 1.5rem; }
+  .format-note { font-size: 0.82rem; font-style: italic; color: var(--clay); padding-top: 1rem; border-top: 1px solid var(--sand); }
+
+  /* BIODATA */
+  .biodata { padding: 8rem 3rem; background: var(--parchment); position: relative; }
+  .biodata::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--sand), transparent); }
+  .biodata-inner { max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
+  .biodata-left p { font-size: 1.05rem; color: #4a3f32; line-height: 1.85; margin-bottom: 1.5rem; }
+  .pub-highlight { margin-top: 2rem; padding: 1.5rem; border-left: 3px solid var(--gold); background: var(--bone); }
+  .pub-highlight-label { font-family: 'Josefin Sans', sans-serif; font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 0.5rem; }
+  .pub-highlight-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-style: italic; color: var(--ink); }
+  .pub-highlight-year { font-size: 0.9rem; color: var(--clay); }
+  .biodata-right h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 500; color: var(--ink); margin-bottom: 1.2rem; }
+  .membership-list { display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 2.5rem; }
+  .membership-item { display: flex; align-items: baseline; gap: 0.8rem; font-size: 0.95rem; color: #4a3f32; }
+  .membership-item::before { content: '\25C6'; font-size: 0.4rem; color: var(--terracotta); position: relative; top: -2px; flex-shrink: 0; }
+  .membership-abbr { font-family: 'Josefin Sans', sans-serif; font-size: 0.65rem; letter-spacing: 0.1em; color: var(--gold); font-weight: 500; }
+  .conference-countries { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+  .conf-country { font-family: 'Josefin Sans', sans-serif; font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--clay-dark); border: 1px solid var(--sand); padding: 0.35rem 0.8rem; background: var(--bone); }
+
+  /* CONTACT */
+  .contact { padding: 6rem 3rem; background: var(--obsidian); text-align: center; position: relative; }
+  .contact-inner { max-width: 700px; margin: 0 auto; position: relative; }
+  .contact .section-tag { justify-content: center; color: var(--gold); }
+  .contact .section-tag::before { background: var(--gold); }
+  .contact .section-heading { color: var(--parchment); }
+  .contact p { color: var(--sand); font-size: 1.08rem; line-height: 1.85; margin-bottom: 2rem; }
+  .contact-email { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 400; }
+  .contact-email a { color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(184,148,62,0.3); padding-bottom: 4px; transition: all 0.3s; }
+  .contact-email a:hover { color: var(--parchment); border-color: var(--parchment); }
+  .contact-note { margin-top: 2.5rem; font-family: 'Josefin Sans', sans-serif; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sand); opacity: 0.6; }
+  .contact-details-row { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(212,197,169,0.15); display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+  .contact-detail { display: flex; align-items: center; gap: 0.6rem; font-size: 0.9rem; color: var(--sand); }
+  .contact-detail svg { width: 16px; height: 16px; color: var(--terracotta); }
+
+  footer { background: var(--obsidian); padding: 2rem 3rem; position: relative; }
+  footer::before { content: ''; position: absolute; top: 0; left: 3rem; right: 3rem; height: 1px; background: rgba(184,148,62,0.15); }
+  .footer-inner { max-width: 1300px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-family: 'Josefin Sans', sans-serif; font-size: 0.6rem; letter-spacing: 0.15em; color: var(--sand); opacity: 0.4; text-transform: uppercase; }
+
+  @media (max-width: 1024px) {
+    .about { grid-template-columns: 1fr; gap: 3rem; }
+    .about-visual { height: 400px; }
+    .hero-gallery-grid { grid-template-columns: repeat(3, 1fr); }
+    .hero-gallery-item:nth-child(4), .hero-gallery-item:nth-child(5) { display: none; }
+    .formats-grid { grid-template-columns: 1fr 1fr; }
+    .hiw-steps { grid-template-columns: repeat(2, 1fr); }
+    .hiw-connector { display: none; }
+    .biodata-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .site-cards { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+  }
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    nav.scrolled { padding: 0.8rem 1.5rem; }
+    .nav-links { gap: 1.5rem; }
+    .nav-links a { font-size: 0.6rem; }
+    .about, .circuits, .formats, .biodata { padding: 5rem 1.5rem; }
+    .formats-grid { grid-template-columns: 1fr; }
+    .hiw-steps { grid-template-columns: 1fr; }
+    .how-it-works, .contact { padding: 4rem 1.5rem; }
+    .about-visual { height: 350px; }
+    .about-accent-frame { padding: 1.5rem; }
+    .accent-stat { font-size: 2.5rem; }
+    .contact-details-row { flex-direction: column; align-items: center; }
+    .footer-inner { flex-direction: column; gap: 0.5rem; text-align: center; }
+    .hero-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-gallery-item:nth-child(3), .hero-gallery-item:nth-child(4), .hero-gallery-item:nth-child(5) { display: none; }
+    .site-cards { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+  }
+  @media (max-width: 480px) { .nav-links { display: none; } .site-cards { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="#" class="nav-logo">Archaeo<span>Scholar</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#circuits">Circuits</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#biodata">Credentials</a></li>
+    <li><a href="#contact">Reach Out</a></li>
+  </ul>
+</nav>
+
+<!-- HERO WITH GALLERY -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <p class="hero-subtitle">Buddhist Circuit &amp; Archaeological Landscapes of Bihar</p>
+    <h1 class="hero-title">Where the Buddha <em>Walked,</em><br>Scholars Follow</h1>
+    <p class="hero-desc">A scholarly initiative exploring the archaeological and sacred landscapes of the Middle Ganga Valley and the Himalayan foothills. From the Mahabodhi Temple to the ancient monastic university of Nalanda — led by an archaeologist with 25 years in the field.</p>
+    <a href="#contact" class="hero-cta">Start a Conversation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+  </div>
+
+  <!-- FIELD GALLERY — Replace placeholders with your actual group tour photos -->
+  <div class="hero-gallery">
+    <div class="hero-gallery-label">From the Field — Scholarly Expeditions in Action</div>
+    <div class="hero-gallery-grid">
+      <div class="hero-gallery-item">
+        <!-- Replace with: <img src="images/field-1.jpg" alt="Group at Nalanda"> -->
+        <div class="gallery-placeholder">[ Group tour photo at Nalanda ]</div>
+        <div class="gallery-caption">Nalanda Mahavihara</div>
+      </div>
+      <div class="hero-gallery-item">
+        <div class="gallery-placeholder">[ Scholars at Rajgir excavation site ]</div>
+        <div class="gallery-caption">Rajgir Field Visit</div>
+      </div>
+      <div class="hero-gallery-item">
+        <div class="gallery-placeholder">[ Group discussion at Bodh Gaya ]</div>
+        <div class="gallery-caption">Mahabodhi Temple</div>
+      </div>
+      <div class="hero-gallery-item">
+        <div class="gallery-placeholder">[ Field walk at Vaishali pillar site ]</div>
+        <div class="gallery-caption">Vaishali Expedition</div>
+      </div>
+      <div class="hero-gallery-item">
+        <div class="gallery-placeholder">[ Scholars at Sarnath ]</div>
+        <div class="gallery-caption">Sarnath Field Study</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="about-visual">
+    <div class="about-img-frame"><div class="placeholder-art">[ Dr. Sharma's Portrait ]</div></div>
+    <div class="about-accent-frame">
+      <div class="accent-stat">25+</div>
+      <div class="accent-label">Years in the Field</div>
+    </div>
+  </div>
+  <div class="about-text">
+    <div class="section-tag">About Dr. Shanker Sharma</div>
+    <h2 class="section-heading">Archaeologist, Academic,<br><em>Field Companion</em></h2>
+    <p>Dr. Shanker Sharma is an archaeologist and academic with nearly twenty-five years of professional experience in field archaeology, heritage management, and museum administration. He currently serves as Assistant Professor in the P.G. Department of Ancient Indian &amp; Asian Studies at Magadh University, Bodh Gaya, Bihar.</p>
+
+    <div class="career-timeline">
+      <div class="career-step">
+        <div class="career-years">2024 –</div>
+        <div class="career-role"><strong>Assistant Professor</strong><br>P.G. Dept. of Ancient Indian &amp; Asian Studies, Magadh University, Bodh Gaya</div>
+      </div>
+      <div class="career-step">
+        <div class="career-years">2018 – 2024</div>
+        <div class="career-role"><strong>Asst. Superintending Archaeologist</strong><br>Nalanda Museum, Archaeological Survey of India</div>
+      </div>
+      <div class="career-step">
+        <div class="career-years">2017 – 2018</div>
+        <div class="career-role"><strong>Research Officer</strong><br>National Museum, New Delhi</div>
+      </div>
+      <div class="career-step">
+        <div class="career-years">2003 – 2017</div>
+        <div class="career-role"><strong>Assistant Archaeologist</strong><br>Archaeological Survey of India</div>
+      </div>
+    </div>
+
+    <div class="credential-list" style="margin-top: 2rem;">
+      <div class="credential-item"><div class="credential-dot"></div>PG Diploma in Archaeology, Institute of Archaeology, ASI, New Delhi</div>
+      <div class="credential-item"><div class="credential-dot"></div>M.A., Ancient Indian History, Culture &amp; Archaeology — Patna University</div>
+      <div class="credential-item"><div class="credential-dot"></div>PhD Scholar, Nava Nalanda Mahavihara, Nalanda</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><div class="divider-line"></div><div class="divider-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><div class="divider-line"></div></div>
+
+<!-- FIELD CIRCUITS WITH SITE PHOTO CARDS -->
+<section id="circuits" class="circuits">
+  <div class="circuits-header">
+    <div class="section-tag">Field Circuits</div>
+    <h2 class="section-heading">Archaeological Landscapes of <em>Bihar &amp; Beyond</em></h2>
+    <p>The Middle Ganga Valley — particularly the historic region of Magadh and northern Bihar — preserves archaeological remains associated with early urbanization, the rise of Buddhism and Jainism, Mauryan imperial architecture, monastic universities, and long-distance trade routes.</p>
+  </div>
+
+  <!-- CIRCUIT 01 -->
+  <div class="circuit-block">
+    <div class="circuit-block-header">
+      <div class="circuit-block-num">01</div>
+      <div class="circuit-block-title">Magadh Region — Core Buddhist Landscape</div>
+    </div>
+    <div class="circuit-block-desc">The heartland of Buddhism — from the Mahabodhi Temple through ancient Rajgriha, the monastic ruins of Nalanda, the Mauryan capital at Pataliputra, and the earliest rock-cut caves at Barabar and Nagarjuni.</div>
+    <div class="site-cards">
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Mahabodhi Temple</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3d3224,#5a4432)">[ photo ]</div><div class="site-card-name">Sujata Stupa</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3a3020,#52412e)">[ photo ]</div><div class="site-card-name">Dungeshwari Caves</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#443826,#5e4830)">[ photo ]</div><div class="site-card-name">Rajgir</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3e3222,#564230)">[ photo ]</div><div class="site-card-name">Gridhrakuta Hill</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Saptaparni Caves</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3d3224,#5a4432)">[ photo ]</div><div class="site-card-name">Cyclopean Wall</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3a3020,#52412e)">[ photo ]</div><div class="site-card-name">Veluvana</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#443826,#5e4830)">[ photo ]</div><div class="site-card-name">Son Bhandar Caves</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3e3222,#564230)">[ photo ]</div><div class="site-card-name">Nalanda Mahavihara</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Kumrahar</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3d3224,#5a4432)">[ photo ]</div><div class="site-card-name">Barabar Caves</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3a3020,#52412e)">[ photo ]</div><div class="site-card-name">Nagarjuni Caves</div></div>
+    </div>
+  </div>
+
+  <!-- CIRCUIT 02 -->
+  <div class="circuit-block">
+    <div class="circuit-block-header">
+      <div class="circuit-block-num">02</div>
+      <div class="circuit-block-title">Northern Bihar — Vaishali &amp; Ashokan Sites</div>
+    </div>
+    <div class="circuit-block-desc">Early historic and Buddhist sites of northern Bihar — Vaishali, the great stupa at Kesariya, Ashokan pillars at Lauriya Areraj, Lauriya Nandangarh, and the twin pillars at Rampurva.</div>
+    <div class="site-cards">
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Vaishali</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3d3224,#5a4432)">[ photo ]</div><div class="site-card-name">Kolhua Ashokan Pillar</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3a3020,#52412e)">[ photo ]</div><div class="site-card-name">Kesariya Stupa</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#443826,#5e4830)">[ photo ]</div><div class="site-card-name">Lauriya Nandangarh</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3e3222,#564230)">[ photo ]</div><div class="site-card-name">Rampurva Pillars</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Chirand</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3d3224,#5a4432)">[ photo ]</div><div class="site-card-name">Chechar</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3a3020,#52412e)">[ photo ]</div><div class="site-card-name">Sagardih</div></div>
+    </div>
+  </div>
+
+  <!-- CIRCUIT 03 -->
+  <div class="circuit-block">
+    <div class="circuit-block-header">
+      <div class="circuit-block-num">03</div>
+      <div class="circuit-block-title">Eastern Bihar — Vikramshila &amp; Beyond</div>
+    </div>
+    <div class="circuit-block-desc">Major sites of eastern Bihar including the monastic university at Vikramshila, early historic fort ruins, rock-cut sculptures at Pattharghatta, and stupa mounds across the Champa region.</div>
+    <div class="site-cards">
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Vikramshila Mahavihara</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3d3224,#5a4432)">[ photo ]</div><div class="site-card-name">Jaimanglagarh</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3a3020,#52412e)">[ photo ]</div><div class="site-card-name">Naulagarh</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#443826,#5e4830)">[ photo ]</div><div class="site-card-name">Pattharghatta</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3e3222,#564230)">[ photo ]</div><div class="site-card-name">Kahalgaon</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Champa</div></div>
+    </div>
+  </div>
+
+  <!-- CIRCUIT 04 -->
+  <div class="circuit-block">
+    <div class="circuit-block-header">
+      <div class="circuit-block-num">04</div>
+      <div class="circuit-block-title">Sacred Buddhist Circuit — Extended Field Study</div>
+    </div>
+    <div class="circuit-block-desc">The complete pilgrimage and archaeological circuit spanning Bihar, Uttar Pradesh, and Nepal — tracing the Buddha's life from Lumbini through Bodh Gaya, Sarnath, and Kushinagar.</div>
+    <div class="site-cards">
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Lumbini</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3d3224,#5a4432)">[ photo ]</div><div class="site-card-name">Bodh Gaya</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3a3020,#52412e)">[ photo ]</div><div class="site-card-name">Sarnath</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#443826,#5e4830)">[ photo ]</div><div class="site-card-name">Kushinagar</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3e3222,#564230)">[ photo ]</div><div class="site-card-name">Shravasti</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Sankisa</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3d3224,#5a4432)">[ photo ]</div><div class="site-card-name">Piprahwa</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3a3020,#52412e)">[ photo ]</div><div class="site-card-name">Rajgir</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#443826,#5e4830)">[ photo ]</div><div class="site-card-name">Nalanda</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3e3222,#564230)">[ photo ]</div><div class="site-card-name">Vaishali</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Kesariya</div></div>
+    </div>
+  </div>
+
+  <!-- CIRCUIT 05 -->
+  <div class="circuit-block">
+    <div class="circuit-block-header">
+      <div class="circuit-block-num">05</div>
+      <div class="circuit-block-title">Ashokan Pillars &amp; Inscription Sites</div>
+    </div>
+    <div class="circuit-block-desc">A dedicated epigraphic circuit covering major Ashokan pillar sites and rock edict locations — from Vaishali through Sarnath, Kausambi, and Delhi-Topra.</div>
+    <div class="site-cards">
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Vaishali Pillar</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3d3224,#5a4432)">[ photo ]</div><div class="site-card-name">Sarnath Pillar</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3a3020,#52412e)">[ photo ]</div><div class="site-card-name">Lumbini Pillar</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#443826,#5e4830)">[ photo ]</div><div class="site-card-name">Kausambi Pillar</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3e3222,#564230)">[ photo ]</div><div class="site-card-name">Delhi-Topra Pillar</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Sasaram Edict</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3d3224,#5a4432)">[ photo ]</div><div class="site-card-name">Basahan Edict</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3a3020,#52412e)">[ photo ]</div><div class="site-card-name">Ahraura Edict</div></div>
+    </div>
+  </div>
+
+  <!-- CIRCUIT 06 -->
+  <div class="circuit-block">
+    <div class="circuit-block-header">
+      <div class="circuit-block-num">06</div>
+      <div class="circuit-block-title">Ancient Monastic Universities</div>
+    </div>
+    <div class="circuit-block-desc">A focused study of the great Buddhist monastic learning centres that shaped intellectual history across Asia — examining architectural remains, spatial organisation, and scholarly traditions.</div>
+    <div class="site-cards">
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#4a3828,#6b5034)">[ photo ]</div><div class="site-card-name">Nalanda Mahavihara</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3d3224,#5a4432)">[ photo ]</div><div class="site-card-name">Vikramshila Mahavihara</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#3a3020,#52412e)">[ photo ]</div><div class="site-card-name">Odantapuri</div></div>
+      <div class="site-card"><div class="site-card-placeholder" style="background:linear-gradient(135deg,#443826,#5e4830)">[ photo ]</div><div class="site-card-name">Telhara</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="process" class="how-it-works">
+  <div class="hiw-inner">
+    <div class="hiw-header">
+      <div class="section-tag">How It Works</div>
+      <h2 class="section-heading" style="color: var(--parchment);">Every Expedition Begins<br>with a <em style="color: var(--gold-light);">Conversation</em></h2>
+      <p>There are no fixed dates, no standard itineraries, no packaged tours. Every expedition is shaped entirely through dialogue — your research interests, your timeline, your scholarly objectives.</p>
+    </div>
+    <div class="hiw-steps">
+      <div class="hiw-step"><div class="hiw-step-num">01</div><h4>Reach Out</h4><p>Write to me about your research interests, the sites or circuits you wish to explore, and the nature of your scholarly work.</p><div class="hiw-connector"></div></div>
+      <div class="hiw-step"><div class="hiw-step-num">02</div><h4>We Discuss</h4><p>I understand your academic background, preferred circuits, group size, and objectives. Together we shape an itinerary that serves your research.</p><div class="hiw-connector"></div></div>
+      <div class="hiw-step"><div class="hiw-step-num">03</div><h4>We Finalise</h4><p>Dates, duration, logistics, and focus areas — all decided through our correspondence. Nothing standardised. Everything built around you.</p><div class="hiw-connector"></div></div>
+      <div class="hiw-step"><div class="hiw-step-num">04</div><h4>We Walk</h4><p>We explore the sites together. On-ground archaeological insights, scholarly discussions, and the kind of access only decades of fieldwork can offer.</p></div>
+    </div>
+    <div class="hiw-email-box">
+      <div class="hiw-email-label">Start here — write to</div>
+      <div class="hiw-email-address"><a href="mailto:arc@gmail.com">arc@gmail.com</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATS -->
+<section class="formats">
+  <div class="formats-header">
+    <div class="section-tag">Engagement Formats</div>
+    <h2 class="section-heading">Three Ways to <em>Explore</em></h2>
+    <p>Whether you are a solo researcher, a small cohort, or a larger academic delegation — write to me and we will determine the format that best serves your scholarly objectives.</p>
+  </div>
+  <div class="formats-grid">
+    <div class="format-card">
+      <svg class="format-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="16" r="8"/><path d="M10 42c0-7.7 6.3-14 14-14s14 6.3 14 14"/></svg>
+      <div class="format-type">Individual</div><div class="format-title">Solo Scholar</div>
+      <div class="format-capacity">1 Participant — Fully Hosted</div>
+      <p class="format-desc">A deeply personal, one-on-one scholarly journey across the circuits of your choice. Ideal for doctoral researchers, independent scholars, or visiting academics. I host you personally — logistics, local transport, and site access are all arranged by me.</p>
+      <p class="format-note">Itinerary, dates, and duration — all decided through our conversation.</p>
+    </div>
+    <div class="format-card">
+      <svg class="format-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18" cy="14" r="7"/><circle cx="34" cy="16" r="5"/><path d="M6 40c0-6.6 5.4-12 12-12 3 0 5.7 1.1 7.8 2.9"/><path d="M26 42c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+      <div class="format-type">Small Group</div><div class="format-title">Cohort Expedition</div>
+      <div class="format-capacity">2 – 5 Participants — Fully Hosted</div>
+      <p class="format-desc">A collaborative expedition for small research groups, thesis cohorts, or academic colleagues. The intimacy of the group allows for rich on-site discussions and cross-pollination of ideas. Fully hosted and managed by me.</p>
+      <p class="format-note">Write with your group's composition and research interests.</p>
+    </div>
+    <div class="format-card">
+      <svg class="format-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="10" r="6"/><circle cx="10" cy="22" r="4"/><circle cx="38" cy="22" r="4"/><circle cx="16" cy="34" r="4"/><circle cx="32" cy="34" r="4"/><path d="M8 44c0-3.3 2.7-6 6-6h20c3.3 0 6 2.7 6 6"/></svg>
+      <div class="format-type">Large Group</div><div class="format-title">Expert Guide</div>
+      <div class="format-capacity">6+ Participants — Hire As Guide</div>
+      <p class="format-desc">For university field trips, academic delegations, or research organisations. You manage your logistics; I bring 25 years of site-specific archaeological knowledge, on-site lectures, and scholarly context to your itinerary.</p>
+      <p class="format-note"><strong>Prerequisite:</strong> All participants must have foundational knowledge of archaeology or history. A brief screening conversation is part of the process.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BIODATA -->
+<section id="biodata" class="biodata">
+  <div class="biodata-inner">
+    <div class="biodata-left">
+      <div class="section-tag">Credentials &amp; Research</div>
+      <h2 class="section-heading">A Life in <em>the Field</em></h2>
+      <p>Dr. Sharma has extensive field experience across several of India's most important archaeological regions — Rakhigarhi, Rajgir, Nalanda, Vaishali, Pataliputra, Bodh Gaya, Vikramshila, Kesariya, Sarnath, Kushinagar, Sanchi, Bharhut, Ladakh, and major Buddhist sites of Odisha such as Lalitgiri and Ratnagiri. His explorations also include archaeological landscapes along the ancient Uttarapatha trade route across Bihar and Jharkhand.</p>
+      <p>His research interests span field archaeology, material culture studies, Buddhist archaeology, heritage management, museology, epigraphy, and early historic architecture — integrating archaeological research with art historical and cultural landscape perspectives.</p>
+      <div class="pub-highlight">
+        <div class="pub-highlight-label">Published Work</div>
+        <div class="pub-highlight-title">Bihar: Cultural Eminence</div>
+        <div class="pub-highlight-year">2017 — Author</div>
+      </div>
+      <p style="margin-top: 1.5rem;">Several published research papers in archaeology and heritage studies, with presentations at international academic conferences.</p>
+    </div>
+    <div class="biodata-right">
+      <h3>Professional Memberships</h3>
+      <div class="membership-list">
+        <div class="membership-item"><span class="membership-abbr">WAC</span> — World Archaeological Congress</div>
+        <div class="membership-item"><span class="membership-abbr">IPPA</span> — Indo-Pacific Prehistory Association</div>
+        <div class="membership-item"><span class="membership-abbr">SOSAA</span> — Society of South Asian Archaeology</div>
+        <div class="membership-item"><span class="membership-abbr">IAS</span> — Indian Archaeological Society</div>
+        <div class="membership-item"><span class="membership-abbr">ISPQS</span> — Indian Society for Prehistory &amp; Quaternary Studies</div>
+        <div class="membership-item"><span class="membership-abbr">ISBS</span> — Indian Society for Buddhist Studies</div>
+      </div>
+      <h3>International Presence</h3>
+      <p style="font-size: 0.95rem; color: #4a3f32; line-height: 1.7; margin-bottom: 1rem;">Research presented at conferences in:</p>
+      <div class="conference-countries">
+        <span class="conf-country">Australia</span><span class="conf-country">South Korea</span><span class="conf-country">Thailand</span><span class="conf-country">Sri Lanka</span><span class="conf-country">Cambodia</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="contact-inner">
+    <div class="section-tag">Begin Here</div>
+    <h2 class="section-heading">Let's Start a <em style="color: var(--gold-light);">Conversation</em></h2>
+    <p>There are no fixed schedules, no booking forms, no standardised packages. Every expedition begins with an email — tell me about your research interests, your academic background, and what you hope to explore. We will shape something meaningful together.</p>
+    <div class="contact-email"><a href="mailto:arc@gmail.com">arc@gmail.com</a></div>
+    <p class="contact-note">I respond personally to every inquiry</p>
+    <div class="contact-details-row">
+      <div class="contact-detail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Magadh University, Bodh Gaya, Bihar</span></div>
+      <div class="contact-detail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><span>Dept. of Ancient Indian &amp; Asian Studies</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span>&copy; 2026 ArchaeoScholar. All rights reserved.</span>
+    <span>A scholarly initiative by Dr. Shanker Sharma</span>
+  </div>
+</footer>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 80); });
+  document.querySelectorAll('a[href^="#"]').forEach(a => { a.addEventListener('click', function(e) { e.preventDefault(); const t = document.querySelector(this.getAttribute('href')); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }); });
+  const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; } }); }, { threshold: 0.1 });
+  document.querySelectorAll('.circuit-block, .format-card, .about-text, .about-visual, .hiw-step, .biodata-left, .biodata-right, .hero-gallery').forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(30px)'; el.style.transition = 'opacity 0.7s ease, transform 0.7s ease'; observer.observe(el); });
+</script>
+</body>
+</html>
